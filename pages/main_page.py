@@ -10,3 +10,6 @@ class MainPage(BasePage):
 
     def should_be_login_link(self):
         self.browser.find_element(*MainPageLocators.LOGIN_LINK)
+
+    def __init__(self, *args, **kwargs):
+        super(MainPage, self).__init__(*args, **kwargs)
