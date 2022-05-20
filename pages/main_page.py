@@ -11,5 +11,15 @@ class MainPage(BasePage):
     def should_be_login_link(self):
         self.browser.find_element(*MainPageLocators.LOGIN_LINK)
 
+    def go_to_basket(self):
+        button = self.browser.find_element(*MainPageLocators.BASKET_BUTTON)
+        button.click()
+
+    def should_not_be_items(self):
+        assert self.is_not_element_present(*MainPageLocators.BASKET_ITEMS)
+
+    def message_empty_is_visible(self):
+        assert self.browser.find_element(*MainPageLocators.BASKET_EMPTY)
+
     def __init__(self, *args, **kwargs):
         super(MainPage, self).__init__(*args, **kwargs)

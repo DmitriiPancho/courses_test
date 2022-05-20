@@ -3,6 +3,9 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-group a.btn.btn-default")
+    BASKET_EMPTY = (By.XPATH, "//p[contains(text(), 'empty')]")
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
 
 
 class LoginPageLocators():
