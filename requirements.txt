@@ -1,0 +1,6 @@
+selenium~=3.14.0
+pytest~=5.1.1
+pip~=21.1.2
+wheel~=0.36.2
+py~=1.11.0
+setuptools~=57.0.0
